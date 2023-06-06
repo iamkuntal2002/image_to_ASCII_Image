@@ -15,15 +15,14 @@ from PIL import ImageEnhance
 
 
 #3rd one
-# mana_output = AsciiArt.from_image('mana2.jpg')
+# mana_output = AsciiArt.from_image('test2.jpg')
 # mana_output.image = ImageEnhance.Brightness(mana_output.image).enhance(1.2)
-# mana_output.to_html_file('mana2.html',columns=300,width_ratio=2.3)
+# mana_output.to_html_file('test2_three.html',columns=400,width_ratio=2.3)
 
 
 #4th one
-grp = AsciiArt.from_image('test.jpg')
-grp.image = ImageEnhance.Brightness(grp.image).enhance(1.3)
+grp = AsciiArt.from_image('test4.jpg')
+grp.image = ImageEnhance.Brightness(grp.image).enhance(1.25)
 grp.image = ImageEnhance.Sharpness(grp.image).enhance(1.3)
-grp.image = ImageEnhance.Color(grp.image).enhance(1.3)
-
-grp.to_html_file('grp2.html',columns=400,width_ratio=2.2)
+grp.image = ImageEnhance.Color(grp.image).enhance(1.15)
+grp.to_html_file('test4_one.html',columns=400,width_ratio=2)
